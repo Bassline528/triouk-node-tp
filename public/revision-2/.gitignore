@@ -1,0 +1,3 @@
+# Ignoramos carpeta de proyecto de Jetbrains
+node_modules/
+.idea/

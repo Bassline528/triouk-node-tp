@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="">
+ 
+  <!-- <link rel="icon" href="images/logo.png"> -->
+ 
+  <meta name="title" content="USERS">
+  <meta name="description" content="Administración de Negocios">
+  <meta name="keyword" content="users, perfil, web">
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="../css/materialize.min.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- LIBRERIA DE JAVASCRIPT -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <script src="../js/materialize.min.js"></script>
+
+  
+ 
+  <title>NoSQL - TrioUK</title>
+</head>
+<body>
+    <!-- SE INICIALIZA LA LIBRERIA PARA PODER USARLA -->
+  <script>
+    AOS.init();
+    M.AutoInit();
+
+   
+    $(document).ready(function(){
+      $('.tabs').tabs();
+    });
+  </script>
+  <section>
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="../index.html" class="brand-logo">
+            <img src="../images/logo_white.png" alt="" height="70">
+          </a>
+          <a href="#" data-target="nav-movil" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <b>
+              <li><a href="../extension/extension.html">Extension</a></li>
+              <li><a href="../teoria/teoria.html">Teoria</a></li>
+              <li><a href="../blog/blog.html">Post</a></li>
+              <li><a href="../twitter/twitter.html">Twitter</a></li>
+              <li><a href="../tweet/tweet.html">Tweet</a></li>
+              <li><a href="../recursos/recursos.html">Recursos</a></li>
+            </b>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="nav-movil">
+      <li><a href="../extension/extension.html">Extension</a></li>
+      <li><a href="../teoria/teoria.html">Teoria</a></li>
+      <li><a href="../blog/blog.html">Post</a></li>
+      <li><a href="../twitter/twitter.html">Twitter</a></li>
+      <li><a href="../tweet/tweet.html">Tweet</a></li>
+      <li><a href="../recursos/recursos.html">Recursos</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="row">
+      <!-- TABS -->
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s4"><a href="#contenido">Contenido</a></li>
+            <li class="tab col s4"><a href="#cuestionario">Cuestionario</a></li>
+            <li class="tab col s4"><a href="#respuestas">Respuestas</a></li>
+          </ul>
+        </div>
+
+        <!-- videos -->
+        <div class="container" >
+            <div id="contenido" class=" card-panel col s12  center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gW9X_GJfaRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="collection ">
+                <a href="https://es.wikipedia.org/wiki/NoSQL" class="collection-item">Wikipedia - NoSQL</a>
+                <a href="https://docs.microsoft.com/es-es/azure/architecture/data-guide/big-data/non-relational-data" class="collection-item">Azure Docs</a>
+                <a href="https://www.redalyc.org/pdf/4139/413940772003.pdf" class="collection-item">Redalyc</a>
+                <a href="https://repositorio.uteq.edu.ec/bitstream/43000/4036/1/T-UTEQ-0078.pdf" class="collection-item">UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO</a>
+              </div>
+            </div>
+            
+
+          
+
+        </div>
+        <!-- form -->
+        <section>
+          <div id="cuestionario" class="col s12">
+            <div id="cuestionario" class="col s12">
+              <h1 style="margin: 1em 2em 1em 2em; font-weight: bold;">Formulario de NoSQL</h1>
+              <form style="margin: 3em;">
+                  <!-- Pregunta 1 -->
+                  <h5>¿De qué forma se hicieron conocidas las BD NoSQL?</h5>
+                  <p>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Jesus programaba en NoSqk</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>.Con la llegada de las redes sociales como Twitter, Facebook o Google, estas usaban ese tipo de BD</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio"  />
+                        <span>Es el mejor tipo de BD</span>
+                      </label>
+                    </p>
+          
+                  <!--Pregunta 2  -->  
+                  <h5>¿En qué se enfocan las BD NoSQL?</h5>
+                  <p>
+                      <label>
+                        <input name="group2" type="radio"/>
+                        <span>Las BD NoSQL le dan mucho mas enfoque a su rendimiento y tiempo de respuesta en tiempo real</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group2" type="radio" />
+                        <span>Su facilidad de uso y aprendizaje</span>
+                      </label>
+                    </p>
+          
+                  <!-- Pregunta 3 -->
+                  <h5>¿Que es una BD no relacional?</h5>
+                  <div class="row">
+                      <div class="col s5">
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label>Responder aqui</label>
+                      </div>
+                  </div>
+          
+                  <!--Pregunta 4 -->
+                  <h5>Seleccione 3 caracteristicas de las bases de datos NoSQL</h5>
+                  <p>
+                      <label>
+                        <input name="group3" type="checkbox" class="filled-in"/>
+                        <span>Facilidad de añadir, eliminar o realizar operaciones sin afectar el rendimiento</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group3" type="checkbox" class="filled-in"/>
+                        <span>Poderosas consultas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group3" type="checkbox" class="filled-in"/>
+                          <span>Implementa ACID</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group3" type="checkbox" class="filled-in"/>
+                        <span>No tiene un esquema rigido para el modelo de datos</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group3" type="checkbox" class="filled-in"/>
+                        <span>Aprovecha las nuevas tecnologias</span>
+                      </label>
+                    </p>
+                  
+                  <!-- Pregunta 5 -->
+                  <h5>Selecciona 1 ventaja de las bases de datos NoSQL.</h5>
+                  <p>
+                      <label>
+                        <input name="group4" type="checkbox" class="filled-in"/>
+                        <span>Buena logica para las consultas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group4" type="checkbox" class="filled-in"/>
+                        <span>Mejor procesamiento de datos que las BD tradicionales</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group4" type="checkbox" class="filled-in"/>
+                          <span>Flexibilidad para una mejor utilidad para desarrollar aplicaciones</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group4" type="checkbox" class="filled-in"/>
+                        <span>Procesamiento de datos mas rapidos que las BD tradicionales/span>
+                      </label>
+                    </p>
+                    
+                  <!-- Pregunta 6 -->
+                  <h5>¿Que son las BD documentales?</h5>
+                  <div class="row">
+                      <div class="col s5">
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label>Responder aqui</label>
+                      </div>
+                  </div>
+          
+                  <!-- Pregunta 7 -->
+                  <h5>Seleccione tipos de datos de las BD documentales.</h5>
+                  <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>JSON</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>XML</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group5" type="checkbox" class="filled-in"/>
+                          <span>BSON</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Cadenas</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Tablas</span>
+                      </label>
+                    </p>
+          
+                  <!-- Pregunta 8 -->
+                  <h5>¿MongoDB es una base de datos NoSQL?</h5>
+                  <p>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Verdadero</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Falso</span>
+                      </label>
+                    </p>
+                  
+                  <!-- Pregunta 9 -->
+                  <h5>¿Para que tipo de aplicaciones estan enfocadas las BD clave/valor?</h5>
+                  <div class="row">
+                      <div class="col s5">
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label>Responder aqui</label>
+                      </div>
+                  </div>
+          
+                  <!-- Pregunta 10 -->
+                  <h5>¿Qué dos tipos de datos administra una BD de grafos?</h5>
+                  <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Nodos</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Estructuras</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group5" type="checkbox" class="filled-in"/>
+                          <span>Bordes</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Dominios</span>
+                      </label>
+                    </p>
+          
+                  <!-- Pregunta 11 -->
+                  <h5>¿Cual es el proposito de una BD de grafos?</h5>
+                  <div class="row">
+                      <div class="col s5">
+                          <input type="text" id="autocomplete-input" class="autocomplete">
+                          <label>Responder aqui</label>
+                      </div>
+                  </div>
+          
+                  <!-- Pregunta 12 -->
+                  <h5>Seleccione cual no es una BD de grafos.</h5>
+                  <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>OrientDB</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Neo4j </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group5" type="checkbox" class="filled-in"/>
+                          <span>Microsoft SQL Server</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Oracle Database</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>AllegroGrap</span>
+                      </label>
+                    </p>
+          
+                  <!-- Pregunta 13 -->
+                  <h5>Seleccione 1 limitacion para las BD SQL.</h5>
+                  <p>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Seguridad</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Consultas simples</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio"  />
+                        <span>Escalabilidad</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio"  />
+                        <span>Simplicidad</span>
+                      </label>
+                    </p>
+          
+                  <!-- Pregunta 14 -->
+                  <h5>Seleccione cual no es una BD de grafos.</h5>
+                  <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Cuando desarrollemos una web</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Cuando desarrollemos una app </span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                          <input name="group5" type="checkbox" class="filled-in"/>
+                          <span>Cuando desarrollemos una red social</span>
+                        </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group5" type="checkbox" class="filled-in"/>
+                        <span>Cuando desarrollemos un .exe o una programa ejecutable</span>
+                      </label>
+                    </p>
+                  
+                  <!-- Pregunta 15 -->
+                  <h5>¿Las BD NoSQL carecen de homogeneizacion?</h5>
+                  <p>
+                      <label>
+                        <input name="group1" type="radio"/>
+                        <span>Verdadero</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Falso</span>
+                      </label>
+                    </p>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- respuestas -->
+        <section>
+          <div id="respuestas" class="col s12">Test 4</div>
+        </section>
+    </div>
+                
+  </section>
+
+
+  <footer class="page-footer teal">
+    <div class="footer-copyright teal">
+      <div class="container">
+      © 2022 Copyright Trío UK
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="../js/app.js"></script>
+</body>
+</html>

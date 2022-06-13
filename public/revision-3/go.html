@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+ 
+  <!-- <link rel="icon" href="images/logo.png"> -->
+ 
+  <meta name="title" content="USERS">
+  <meta name="description" content="Administración de Negocios">
+  <meta name="keyword" content="users, perfil, web">
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- LIBRERIA DE JAVASCRIPT -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://kit.fontawesome.com/b6e57e3cb9.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="./js/app.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <script src="./js/materialize.min.js"></script>
+  <style>
+    pre {
+      font-family: monospace; 
+      margin: 20px 25px;
+      border-radius: 5px;
+      border: 1px solid #292929;
+      position: relative;
+      color: rgb(4, 4, 114);
+     
+  }
+  </style>
+ 
+  <title>Go - TrioUK</title>
+</head>
+<body>
+    <!-- SE INICIALIZA LA LIBRERIA PARA PODER USARLA -->
+  <script>
+    AOS.init();
+    M.AutoInit();
+    $(document).ready(function(){
+      $('.tabs').tabs();
+      $('.scrollspy').scrollSpy();
+    });
+
+    
+  </script>
+  <section>
+    <nav class="light-blue darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">
+            <img src="./images/logo_white.png" alt="" height="27"> TrioUk
+          </a>
+          <a href="#" data-target="nav-movil" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <b>
+              <li><a href="./typescript.html">Typescript</a></li>
+              <li><a href="./go.html">Go</a></li>
+              <li><a href="./recursos.html">Recursos</a></li>
+            </b>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="nav-movil">
+      <li><a href="./typescript.html">Typescript</a></li>
+      <li><a href="./go.html">Go</a></li>
+      <li><a href="./recursos.html">Recursos</a></li>
+    </ul>
+    
+  </section>
+
+
+  <section  class="white">
+    <div class="row">
+      <div class="col s12 m9 l10">
+        <div id="introduction" >
+
+          <div id="introduccion" class="container section scrollspy">
+            <div class="row ">
+                <div class="col l6 ">
+                    <h4> Go es un lenguaje de programación de código abierto creado por Google </h4>
+                    <h6 style="margin-top: 50px;"> Diseño para la sencillez y la eficiencia,
+                      compila en código máquina,
+                      lenguaje de tipo estático</h6>
+                    <a style="margin-top: 50px;" class="waves-effect waves-light btn light-blue darken-4" href="https://go.dev/"><i class="material-icons right">keyboard_arrow_right</i>Pagina oficial</a>
+                </div>
+                <div class="col l6" style="padding-top: 10px;">
+                    <img class="responsive-img" src="https://i.pinimg.com/originals/bc/75/22/bc75225ef044d29d1f2d1c051d9b8063.gif" style="max-width: 300px;" alt="">
+                </div>
+            </div>
+          </div>
+      
+          <div id="queEsGo"class="white section scrollspy">
+            <div class="container">
+              <div class="row">
+                <div class="col s12">
+                  <h4><b> ¿Qué es Go?</b></h4>
+                  <p> El lenguaje de programación Go es un proyecto de código abierto para hacer que los programadores sean más productivos.
+      
+                    Go es expresivo, conciso, limpio y eficiente. Sus mecanismos de concurrencia facilitan la escritura de programas que aprovechan al máximo las máquinas multinúcleo y en red, mientras que su novedoso sistema de tipos permite la construcción de programas modulares y flexibles. Go compila rápidamente en código de máquina pero tiene la comodidad de la recolección de elementos no utilizados y el poder de la reflexión en tiempo de ejecución. Es un lenguaje compilado rápido, tipificado estáticamente que se siente como un lenguaje interpretado y tipificado dinámicamente.</p>
+                </div>
+              </div>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/bTGQ_emO7OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div>
+  
+        <div id="structure" >
+          <div id="comoInstalar" class="white section scrollspy">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col s12">
+                  <h4><b> Como instalar </b></h4>
+                  <h5> 1. Descarga Go!</h5>
+                  <p>Haga clic en el botón de abajo para descargar el instalador de Go.</p>
+                  <a class="waves-effect waves-light btn-large light-blue darken-4 ">Descarga</a>
+                  <h5> 2. Instala Go!</h5>
+                </div>
+      
+                <div class="col s12 card-panel">
+                  
+                  <ul class="tabs">
+                    <li class="tab col s4"><a  href="#linux">Linux</a></li>
+                    <li class="tab col s4"><a  href="#windows">Windows</a></li>
+                    <li class="tab col s4"><a  href="#mac" > Mac</a></li>
+                  </ul>
+      
+                  <div id="linux" class="col s12">
+                    <p> 1. <b>Elimine cualquier instalación anterior de Go</b> eliminando la carpeta /usr/local/go (si existe), luego extraiga el archivo que acaba de descargar en /usr/local, creando un nuevo árbol de Go en /usr/local/go:</p>
+                    <pre>$ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz</pre>
+                    <p>(Es posible que deba ejecutar el comando como root o a través de sudo).</p>
+                    <p><b>2. Agregue /usr/local/go/bin a la variable de entorno PATH.</b></p>
+                    <p>Puede hacerlo agregando la siguiente línea a su $HOME/.profile o /etc/profile (para una instalación en todo el sistema):</p>
+                    <pre>export PATH=$PATH:/usr/local/go/bin</pre>
+                    <p><b>3. Verifique que haya instalado Go abriendo una terminal y escribiendo el siguiente comando:</b></p>
+                    <pre>$ go version </pre>
+                  </div>
+      
+                  <div id="windows" class="col s12">
+                    <p> <b> 1. Abra el archivo MSI que descargó y siga las instrucciones para instalar Go.</b></p>
+                    <p> De forma predeterminada, el instalador instalará Ir a Archivos de programa o Archivos de programa (x86). Puede cambiar la ubicación según sea necesario. Después de la instalación, deberá cerrar y volver a abrir cualquier símbolo del sistema abierto para que los cambios en el entorno realizados por el instalador se reflejen en el símbolo del sistema.</p>
+                    <p><b> 2. Verifica que hayas instalado Go.</b></p>
+                    <p> Abrir la Powershell de windows y escribir el siguiente comando:</p>
+                    <pre>$ go version            </pre>
+                  </div>
+      
+                  <div id="mac" class="col s12">
+                    <p><b>1. Abra el archivo del paquete que descargó y siga las indicaciones para instalar Go.</b></p>
+                    <p> 
+                      El paquete instala la distribución de Go en /usr/local/go. El paquete debe colocar el directorio /usr/local/go/bin en su variable de entorno PATH. Es posible que deba reiniciar cualquier sesión de Terminal abierta para que el cambio surta efecto.</p>
+                    <p><b>2. Verifique que haya instalado Go abriendo una terminal y escribiendo el siguiente comando:</b></p>
+                    <pre>$ go version </pre>
+                  </div>
+      
+                </div>
+              </div>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/oryHD8gRPGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+  
+        <div id="primerosPasos"class="white section scrollspy ">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Primeros pasos</b></h4>
+                <p>Como primer vistazo a cualquier lenguaje de programación haremos el clásico ejemplo de un programa que imprime en pantalla el famoso "Hola mundo!"<br></p>
+                <p>Para esto es necesario pegar el siguiente código en nuestro editor de texto de nuestra preferencia:<br></p>
+                <pre>
+                    <code>
+                      package main
+                      import "fmt"
+                      // this is a comment
+                      func main() {
+                          fmt.Println("Hola mundo!")
+                      }
+                    </code>
+                </pre>
+                <p>Abre una nueva terminal y escribe lo siguiente </p>
+                <pre>
+                  <code>
+                    go run {nombre de tu archivo}.go
+                  </code>
+              </pre>
+              <p>Deberias ver "Hola mundo" mostrado en tu terminal. En el siguiente video explicamos en profundidad que hace cada linea de código: </p>
+              </div>
+            </div>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/3ezU5q5oMF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="tiposDatos"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Tipos de datos y variables</b></h4>
+                  <p> En el ejemplo anterior usamos un dato de tipo String para almacenar "Hola mundo!". Los <b>tipos</b> de datos categorizan un grupo de datos relacionados, describen la operacion que pueden hacerse en ellos y definen la forma en la que se almacenan.</p>
+
+                <h5><b>Numéricos</b></h5>
+                  <p>Go tiene diferentes tipos de datos para representar números. Generalmente dividimos los numeros en dos tipos: <b>Integers</b> y <b>floating-point numbers</b></p>
+                  <h6>Integers (Enteros)</h6>
+                    <p>Para hacerlo facil los enteros (integers) son numeros que no tienen decimal, estos pueden ser o negativos, cero o positivos</p>
+                  <h6>Floating Point Numbers (Numeros con decimal)</h6>
+                    <p>Asi como los enteros y como su nombre lo dice, este tipo de dato numérico son como los enteros pero con decimales.</p>
+                    <p>Ejemplo de ambos: </p>
+                    <pre>
+                      <code>
+                        package main
+
+                        import "fmt"
+
+                        func main() {
+                          fmt.Println("Suma de numeros enteros: 7 + 5 = " , 7+5)
+                          fmt.Println("Suma de numeros decimales: 7,7 + 5,3 = " , 7.7 + 5.3)
+                        }
+                      </code>
+                    </pre>
+                  
+                  <p>Si corrieras este programa el resultado seria el siguiente: </p>
+                  <pre>
+                    <code>
+                      $ go run main.go
+                        Suma de numeros enteros: 7 + 5 = 12
+                        Suma de numeros decimales: 7,7 + 5,3 = 13
+                    </code>
+                  </pre>
+                  <p>En adicion, Go tiene diferentes <b>operadores</b>: </p>
+                  
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>-</td>
+                        <td>Substraccion</td>
+                      </tr>
+                      <tr>
+                        <td>+</td>
+                        <td>Adicion</td>
+                      </tr>
+                      <tr>
+                        <td>*</td>
+                        <td>Multiplicacion</td>
+                      </tr>
+                      <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                      </tr>
+                      <tr>
+                        <td>%</td>
+                        <td>Resto</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <h5><b>Strings (Cadenas)</b></h5>
+                  <p>
+                    Asi como vimos en el primer ejemplo de "Hola mundo!" un string es una secuencia de caracteres con una longitud definida usada para representar texto:
+                    <pre>
+                      <code>
+                        package main
+                        import "fmt"
+                        // this is a comment
+                        func main() {
+                            fmt.Println("Esto es un string!!!")
+                        }
+                      </code>
+                  </pre>
+                  </p>
+
+                  <h5><b>Booleans</b></h5>
+                  <p>
+                    Un valor boolean es un tipo de dato especial que representa verdadero o falso:</p>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>&&</td>
+                          <td>and</td>
+                        </tr>
+                        <tr>
+                          <td>||</td>
+                          <td>Or</td>
+                        </tr>
+                        <tr>
+                          <td>!</td>
+                          <td>not</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <pre>
+                      <code>
+                        package main
+                        import "fmt"
+                        // this is a comment
+                        func main() {
+                          fmt.Println(true && true)
+                          fmt.Println(true && false)
+                          fmt.Println(true || true)
+                          fmt.Println(true || false)
+                          fmt.Println(!true)
+                        }
+                      </code>
+                  </pre>
+                  <p>Correr este programa imprimiria los siguientes resultados: </p>
+                  <pre>
+                    <code>
+                      $ go run main.go
+                        true
+                        false
+                        true
+                        true
+                        false
+                      }
+                    </code>
+                  </pre>
+                  <h5><b>Variables</b></h5>
+                  <p> Una variable es la locacion donde se almacena un valor, con un tipo y un nombre asignado. Vamos a usar el ejemplo de "Hola mundo" pero aplicando esto: </p>
+                  <pre>
+                    <code>
+                      package main
+
+                      import "fmt"
+
+                      func main() {
+                        var x string = "Hello World"
+                        fmt.Println(x)
+                      }
+                    </code>
+                  </pre>
+                  <p>En este caso nombramos la variable como "x". En cuanto a la reglas de como se debe nombrar una variable contamos con que pueden tener letras, numeros, y _ (barra baja)</p>
+                  <h6><b>Constantes</b></h6>
+                  <p>Go tambien soporta variables de tipo constantes, basicamente son valores los cuales no pueden cambiar su valor luego, para este ejemplo usaremos la palabra "const" en vez de la palabra "var" para declarar una variable de tipo numérico: </p>
+                  <pre>
+                    <code>
+                      package main
+
+                      import "fmt"
+
+                      func main() {
+                        const x saldoDisponible = 25000
+                        fmt.Println(x)
+                      }
+                    </code>
+                  </pre>
+              </div>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/vIX7NOe5OAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="estructurasDeControl"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Estructuras de control</b></h4>
+                <h5><b>For</b></h5>
+                <p>Haciendo uso de lo aprendido con variables, suponiendo que queremos hacer un programar que cuente del 1 al 10 podemos hacerlo de la siguiente manera:
+                </p>
+                <pre>
+                  <code>
+                    package main
+
+                    import "fmt"
+
+                    func main() {
+                      fmt.Println(1)
+                      fmt.Println(2)
+                      fmt.Println(3)
+                      fmt.Println(4)
+                      fmt.Println(5)
+                      fmt.Println(6)
+                      fmt.Println(7)
+                      fmt.Println(8)
+                      fmt.Println(9)
+                      fmt.Println(10)
+                    }
+                  </code>
+                </pre>
+                <p>Pero si tenemos que imprimir una mayor cantidad de numeros podemos facilitar esta tarea gracias a los <b>For loops</b></p>
+                <p>Los for loops o bucles for nos permiten repetir declaraciones muchas veces asi:</p>
+                <pre>
+                  <code>
+                    package main
+
+                    import "fmt"
+
+                    func main() {
+                      i := 1
+                      for i <= 10 {
+                        fmt.Println(i)
+                        i = i + 1
+                      }
+                    }
+                  </code>
+                </pre>
+                <p>De esta manera <b>mientras</b> i sea menor o igual a 10 nuestro programa entrará nuevamente en el for loop e imprimira el valor de i para luego sumarle 1</p>
+                <h5><b>If</b></h5>
+                <p>Similar a las sentencias for los if tienen un bloque de codigo por debajo, la diferencia esta en que la sentencia if decide que que bloque de codigo ejecutar en base a una condicion. Se ve mejor en este ejemplo: </p>
+                <pre>
+                  <code>
+                    if i % 2 == 0 {
+                      fmt.Println("Par")
+                    } else {
+                      fmt.Println("Impar")
+                    }
+                  </code>
+                </pre>
+                <p>Notar la palabra <b>else</b> que permite la ejecucion de imprimir en pantalla "impar" en caso de que la variable i sea impar</p>
+              </div>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/mKB6ymE0sHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="arreglos"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Arreglos</b></h4>
+                <p> Los arreglos (o arrays) son elementos enumerados de un mismo tipo con una longitud definida.</p>
+                <pre>
+                  <code>
+                    var x [5]int
+                  </code>
+                </pre>
+                <p> <b>x</b> es un ejemplo de un array de tipo entero que esta compuesta de 5 elementos.</p>
+                <pre>
+                  <code>
+                    package main
+
+                    import "fmt"
+
+                    func main() {
+                      var x [5]int
+                      x[4] = 100
+                      fmt.Println(x)
+                    }
+                  </code>
+                </pre>
+                <p> Deberias ver esto: </p>
+                <pre>
+                  <code>
+                    [0 0 0 0 100]
+                  </code>
+                </pre>
+                <p>Arrays son indexados, el numero de posicionamiento de sus elementos empieza en 0, entonces en el ejemplo accedimos a la posicion 5 y le dimos el valor de 100.</p>
+                <iframe width="937" height="498" src="https://www.youtube.com/embed/lMj1XMMPU3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="funciones"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Funciones</b></h4>
+                <p>Una funcion es una porcion independiente de codigo que ejecuta esa porcion cuando sea llamado, para esto la funcion tiene un nombre seguido de unos parentesis, asi:</p>
+                <pre>
+                  <code>
+                    func main() {
+                      xs := []float64{98,93,77,82,83}
+                    
+                      total := 0.0
+                      for _, v := range xs {
+                        total += v
+                      }
+                      fmt.Println(total / float64(len(xs)))
+                    }
+                  </code>
+                </pre>
+                <p>La nomenclatura de las funciones empieza por la palabra <b>func</b> seguido del nombre de la funcion. Tambien, los parametro o inputs de la funcion se deben agregar dentro de los parentesis seguido del nombre de la funcion..</p>
+                <pre>
+                  <code>
+                    func f(x int) {
+                      fmt.Println(x)
+                    }
+                    func main() {
+                      x := 5
+                      f(x)
+                    }
+                  </code>
+                </pre>
+                <p>Tambien hay una palabra reservada para retornar un valor luego de que una funcion se ejecute, para esto usamos la palabra <b>return</b></p>
+                <pre>
+                  <code>
+                    func f1() int {
+                      return 432
+                    }
+                  </code>
+                </pre>
+                <p>Debemos indicar que tipo de dato se retornara luego de los parentesis</p>
+                <iframe width="937" height="498" src="https://www.youtube.com/embed/BDLlhk8jtlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="ejemploPractico"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Ejemplos practicos</b></h4>
+                <p>Todos los ejemplos realizados los puedes encontrar haciendo click en el siguiente enlace.</p>
+                <a  class="waves-effect waves-light btn light-blue darken-4" href="https://github.com/Bassline528/go-tp"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="conclusion"class="white section scrollspy">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Conclusion</b></h4>
+                <p>
+                  El lenguaje de programación Go nace en el año 2007 y fue desarrollado por los ingenieros Rob Pike, Ken Thompson y Robert Griesemer, es un lenguaje compilado y concurrente al igual que C desarrollado en google, con una sintaxis clara limpia y organizada. Los creadores de Go se inspiraron en la versatilidad y cualidades de otros lenguajes como Python, C++, Java y entre otros. <br>
+                  <br>
+                  Go es eficiente, escalable y productivo, intenta combinar la facilidad de programación de un lenguaje interpretado y tipificado dinámicamente con la eficiencia y seguridad de un lenguaje compilado y tipificado estáticamente. <br>
+                  <br>
+                  Varios grandes servicios orientados al usuario lo usan, también muchas otras empresas utilizan Go, la lista es muy larga pero algunos de los más conocidos son: BBC, Docker. DropBox, Heroku, Nokia, Twitter, Paypal, Netflix, Uber, Pinterest y obviamente Google. <br>
+                  <br>
+                  Es concurrente, hace que se puedan crear threads (hilos) en un mismo procesador para ejecutar procesos paralelamente. <br>
+                  <br>
+                  Posee una sintaxis bastante sencilla, cuando declaras una variable la puedes declarar si es privada o pública tan solo con escribir la primera letra en mayúscula o minúscula. También puedes declarar variables sin indicar el tipo de dato y el compilador va a interpretar que tipo de dato es. No se necesita usar la palabra “var” para declarar, ni “String”, simplemente “:=” para indicar que es una variable y que la estás asignando directamente. <br>
+                  <br>
+                  Es capaz de compilar en cualquier sistema operativo, pudiendo crear un ejecutable en código máquina para cualquier sistema. <br>
+                  <br>
+                  Go es multiparadigma, es decir, puedes realizar programación estructurada, programación orientada a objetos, programación funcional, entre otras. Posee una guía de estilos bastante estructurada, ya que al estan bien definida, solo se debe respetar el estilo sin necesidad de entrar en discusiones de como escribir el código. Go también cuenta con un garbage recollector (recolector de basura). <br>
+                  <br>
+                  Con Go se puede trabajar en áreas como Cloud y Networking, creando servicios y microservicios; también creando Scripts para el sistema (programas que corren en línea de comando); automatizaciones para Devops; para realizar backend, es decir, crear APIS REST ya que go incluye su propio servidor HTTP. <br>
+                  <br>
+                  Gracias a su eficacia y a su extraordinario rendimiento, aspectos que se reflejan también en las aplicaciones que se programan con él, Go es una interesante opción especialmente en los ámbitos de los negocios y los servidores. <br>
+                  <br>
+                  Es un lenguaje que está creciendo rápidamente, en la actualidad es uno de los más demandados por la industria. Según la encuesta de Hired Go es el lenguaje de programación con mayor demanda laboral para el 2020. <br>
+                  <br>
+                  Sin embargo, podemos mencionar que este lenguaje de programación no cuenta con una documentación extensa en cuanto a manuales, procedimientos, libros e informes. Por otra parte, no es posible implementar herencias si no instanciamos de un type.  <br>
+                  <br>
+                  Por ser un lenguaje de programación que no cuenta con tanta antigüedad como Java, PHP, C#, entre otros, su comunidad aún sigue siendo pequeña y se encuentra en crecimiento. <br>
+                  <br>
+                  A pesar de sus desventajas, Go sigue siendo un lenguaje funcional para los casos ya mencionados y al ser un lenguaje en crecimiento podemos esperar una buena evolución para el futuro, por lo que es una excelente opción para aprenderlo hoy en día. <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col hide-on-small-only m3 l2 sticky">
+        <ul class="section table-of-contents">
+          <li><a href="#introduccion">Introduccion</a></li>
+          <li><a href="#queEsGo">¿Qué es Go?</a></li>
+          <li><a href="#comoInstalar">Como instalar</a></li>
+          <li><a href="#primerosPasos">Primeros pasos</a></li>
+          <li><a href="#tiposDatos">Tipos de datos - Variables</a></li>
+          <li><a href="#estructurasDeControl">Estructuras de control</a></li>
+          <li><a href="#arreglos">Arreglos</a></li>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#ejemploPractico">Ejemplo practico</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <footer class="page-footer light-blue darken-4 " >
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img src="./images/logo_white.png" class="responsive-img" alt="" width="100">
+          <h5 class="white-text">TRIOUK</h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright ">
+      <div class="container">
+      © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+ 
+  
+</body>
+</html>

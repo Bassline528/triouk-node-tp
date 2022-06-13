@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.5">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+ 
+  <!-- <link rel="icon" href="images/logo.png"> -->
+ 
+  <meta name="title" content="USERS">
+  <meta name="description" content="Administración de Negocios">
+  <meta name="keyword" content="users, perfil, web">
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- LIBRERIA DE JAVASCRIPT -->
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://kit.fontawesome.com/b6e57e3cb9.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="./js/app.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <script src="./js/materialize.min.js"></script>
+  
+ 
+  <title>Typescript - TrioUK</title>
+</head>
+<body>
+  <script>
+    AOS.init();
+    M.AutoInit();
+    $(document).ready(function(){
+      $('.tabs').tabs();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+  <section>
+    <nav class="light-blue darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo">
+            <img src="./images/logo_white.png" alt="" height="27"> TrioUk
+          </a>
+          <a href="#" data-target="nav-movil" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <b>
+              <li><a href="./typescript.html">Typescript</a></li>
+              <li><a href="./go.html">Go</a></li>
+              <li><a href="./recursos.html">Recursos</a></li>
+            </b>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <ul class="sidenav" id="nav-movil">
+      <li><a href="./typescript.html">Typescript</a></li>
+      <li><a href="./go.html">Go</a></li>
+      <li><a href="./recursos.html">Recursos</a></li>
+    </ul>
+    
+  </section>
+
+  <section class="white">
+    <div class="row">
+      <div class="container">
+        <div class="col s12 m9 l10">
+
+          <div class="col l6" id="introduccion">
+              <h1 style="font-size: 2.5em; font-weight: bolder;"> TypeScript es JavaScript con sintaxis para tipos de datos. </h1>
+              <h6 style="margin-top: 50px;"> TypeScript es un lenguaje de programación fuertemente tipado que se basa en JavaScript, lo que le brinda mejores herramientas a cualquier escala. </h6>
+              <a style="margin-top: 50px;" class="waves-effect waves-light btn light-blue darken-4" href="https://www.typescriptlang.org/"><i class="material-icons right">keyboard_arrow_right</i>Pagina oficial</a>
+          </div>
+          <div class="col l6" style="padding-top: 1.9em;">
+              <img class="responsive-img" style="border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" src="images/ts-1.jpg" alt="">
+          </div>
+          
+
+          <div id="quees" class="section scrollspy">
+            <h1 style='font-weight: bolder; margin: 1em 0;'>Que es TypeScript?</h1>
+            <p style="font-size: 16px;">TypeScript (TS) es un lenguaje de programación construido a un nivel superior de JavaScript (JS). Esto quiere decir que TypeScript dota al lenguaje de varias características adicionales que hacen que podamos escribir código con menos errores, más sencillo, coherente y fácil de probar, en definitiva, más limpio y sólido. <br><br>
+            Fue creado por Microsoft en 2012 y, desde entonces, su adopción no ha hecho más que crecer. Especialmente, desde que Google decidió adoptarlo como lenguaje por defecto para desarrollar con Angular. Aunque, hoy en día, podemos desarrollar con TypeScript en cualquiera de los frameworks o librerías más punteras, como son React para el frontend o Node para el backend.</p>
+            <p style="font-size: 16px;">
+              TypeScript va un paso más allá de ECMAScript 6 o posterior y añade más funcionalidad a ECMAScript, como tipado fuerte, anotaciones o módulos.<br><br>
+              Como TypeScript es un superconjunto de JavaScript, todo el código escrito en JS es válido para TS. Pero no lo contrario. Esto lo podemos comprobar gracias a los navegadores web. Ya que no entienden el código escrito en TypeScript y, para que lo hagan, es necesario hacer una "transpilación" del código a JavaScript.<br><br>
+        
+              La transpilación es aplicable hacia cualquier versión de ECMAScript, tanto para navegadores antiguos como para navegadores más actuales.
+            </p>
+          </div>
+
+          <div id="tsvsjs" class="section scrollspy">
+            <h1 style='font-weight: bolder; margin: 1em 0;'>TypeScript vs. JavaScript</h1>
+            <img class="responsive-img" style="border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" src="images/ts-2.png" alt="">
+            <p style="font-size: 16px;">Si profundizamos más en TypeScript y JavaScript, obtenemos una comparativa más exhaustiva de ambos:</p>
+            <ul>
+              <li><strong>Tipado estático, genérico, estructural y enumerados:</strong> en JS no existen como tal los tipados, aunque los enumerados se pueden simular con clases         sencillas. Mientras que TS es un lenguaje fuertemente tipado, donde se pueden crear tipos genéricos o interfaces.</li>
+              <li><strong>Modularización: </strong>TS ofrece un soporte directo para módulos, mientras que JS lo hace a través de ECMAScript 6.</li><li><strong>Tuplas:</strong> JS no las soporta, pero si TS.</li>
+              <li><strong>Orientación a objetos:</strong> la sintaxis de TS para la <a href="https://profile.es/blog/que-es-la-programacion-orientada-a-objetos/">programación orientada a objetos</a> es muy similar a la de otros lenguajes como <a href="https://profile.es/blog/variables-tipos-datos-java/">Java</a> o C#. Y además añade clases abstractas y modificadores de acceso, entre otras características. En JS también se puede programar orientado a objetos, pero es algo más complejo.</li><li><strong>Decoradores:</strong> JS no tiene soporte para decoradores, mientras que TS si.</li>
+              <li><strong>Interfaces: </strong>Como hemos mencionado, en TS las interfaces son imprescindibles, brindándote la posibilidad de crear escenarios más avanzados. En JS no existe soporte para interfaces.</li>
+            </ul>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/bvSYJYCKhyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="instalar" class="section scrollspy">
+            <h1 style='font-weight: bolder; margin: 1em 0;'>Instalar Typescript</h1>
+            <p>Primero: es importante que antes de empezar cualquier proyecto con typescript tengas instalado <a href="https://nodejs.org/es/">Node.js</a>.</p>
+            <br>
+            <br>
+            <h1 style='font-weight: bolder; margin: 1em 0;'>Te mostramos como instalar node</h1>
+            <ol>
+              <li>
+                <p>Entrar en https://nodejs.org/es/download/ y descargar el instalador de Node.js en el sistema operativo deseado. Podemos elegir entre Windows, Mac y Linux.</p>
+                <img src="./images/node-1.jpeg" style="height: 400px; width: 600px;" alt="">
+              </li>
+              <li>
+                <p>Ejecutar el instalador que acabamos de descargar. Simplemente debemos avanzar en el proceso de instalación.</p>
+                <img src="./images/node-2.jpeg" style="height: 400px; width: 600px;" alt="">
+              </li>
+              <li>
+                <p>Una vez finalizado el proceso de instalación, podemos comprobar fácilmente si se nos ha instalado correctamente. Para ello, vamos al intérprete de comandos de nuestro ordenador (en Windows, por ejemplo, escribir “cmd” en la barra de búsqueda y abrir la aplicación de “Símbolo del sistema”).</p>
+                <img src="./images//node-3.jpeg" style="height: 400px; width: 600px;" alt="">
+              </li>
+              <li>
+                <p>En la ventana de comandos, escribir node -v y pulsar la tecla Enter. Nos debería aparecer la versión que tenemos instalada de Node.js (en mi caso la versión 12.19.0). Para comprobar que se nos ha instalado también NPM, escribiremos npm -v y pulsaremos de nuevo Enter. Nos debería aparecer también en este caso la versión del Node Package Manager (en mi caso la versión 6.14.8).</p>
+                <img src="./images/node-4.jpeg" style="height: 130px; width: 650px;" alt="">
+              </li>
+              <li>
+                <p>Con estos 4 sencillos pasos ya tendremos instalado y disponible para utilizar todo el potencial de Node.js junto con el instalador de paquetes NPM.</p>
+              </li>
+            </ol>
+            <br>
+            <br>
+            <p>Una vez instalado y configurado node en tu ambiente de trabajo Node, ingresamos los siguientes comandos en la terminal para poder inicializar un nuevo proyecto con NPM</p>
+            <pre>
+              <code>
+                <span style="color: green;">//Crea una nueva carpeta</span>
+                <span>mkdir primer-proyecto</span>
+                <span>cd primer-proyecto</span>
+                <span style="color: green;">//Inicializa el nuevo proyecto npm con el siguiente comando</span>
+                <span>npm init</span>
+                <span style="color: green;">//Inicializa el nuevo proyecto npm con el siguiente comando</span>
+                <span>npm install --save-dev typescript tslint @types/node
+                </span>
+              </code>
+            </pre>
+            <p>Segundo: toca crear y configurar la carpeta <b>tsconfig.json</b>.</p>
+            <p>Cada proyecto de TypeScript debe incluir un archivo llamado tsconfig.json en su directorio raíz.
+              Este tsconfig.json es donde los proyectos de TypeScript definen cosas como qué archivos deben ser
+              compilados, en qué directorio compilarlos y qué versión de JavaScript debe usar.</p>
+            <p>Se debe crear un nuevo archivo llamado tsconfig.json en la carpeta raíz "primer-proyecto", luego abrirla y copiar el siguiente codigo:</p>
+            <pre>
+              <code>
+                {
+                  <span style="color: purple;">"compilerOptions"</span>: {
+                    <span style="color: purple;">"lib"</span>: ["es2015"],
+                    <span style="color: purple;">"module"</span>: "commonjs",
+                    <span style="color: purple;">"outDir"</span>: "dist",
+                    <span style="color: purple;">"sourceMap"</span>: true,
+                    <span style="color: purple;">"strict"</span>: true,
+                    <span style="color: purple;">"target"</span>: "es2015"
+                  },
+                  <span style="color: purple;">"include"</span>: [
+                  "src"
+                  ]
+                }
+              </code>
+            </pre>
+            <p>Tercero: debemos crear tambien la carpeta <b>tslint.json</b></p>
+            <p>La creamos ingresando el siguiende comando en la terminal</p>
+            <pre>
+              ./node_modules/.bin/tslint --init
+            </pre>
+            <p>Cuarto: dentro de nuestra carpeta "primer-proyecto creamos un archivo llamado "index.ts"</p>
+            <p>Hasta el momento nuestro proyecto quedaria asi:</p>
+            <pre>
+              <code>
+                chapter-2/
+                ├──node_modules/
+                ├──src/
+                │ └──index.ts
+                ├──package.json
+                ├──tsconfig.json
+                └──tslint.json
+              </code>
+            </pre>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/nnySQWS8y3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+
+            </div>
+            <h1 style='font-weight: bolder; margin: 1em 0;' id="primerospasos" class="section scrollspy">Primeros Pasos</h1>
+            <p>Luego ingresamos al archivo "index.js" y escribimos el siguiente codigo: </p>
+            <pre>
+              <code><span style="color: purple;">console.log</span>(<span style="color: green;">'Hello Wordl!'</span>)</code>
+            </pre>
+            <p>Y por ultimo, compilamos y corremos el codigo TypeScript ingresando los siguientes comandos en la terminal:</p>
+            <pre>
+              <code>
+                <span style="color: green;">//Compilamos el codigo con TSC</span>
+                <span>./node_modules/.bin/tsc</span>
+                <span style="color: green;">//Corremos el codigo con NodeJS</span>
+                <span>node ./dist/index.js</span>
+              </code>
+            </pre>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/wGfFd7jEmH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="tipos" class="section scrollspy">
+            <h1 style='font-weight: bolder; margin: 1em 0;'>Tipos de Datos</h1>
+            <p style='font-size: 1.5em;'><b>Any</b></p>
+            <div style="display: flex; gap: 2em; padding-bottom: 2em; width: 90%;">
+              <p>En Typescript todo necesita tener un tipo de compilacion, y <b>any</b> es el tipo prederteminado cuando tanto el programador y el typecheker no pueden averiguar de que tipo es una variable. Es un tipo de ultimo recurso, y se debe evitar su uso en lo posible. <br>
+              ¿Por qué deberíamos evitar <b>any</b>?. Un "tipo" es un conjunto de valores y las
+              cosas que podemos hacer con esos valores. <b>any</b> es el conjunto de todos los valores, y podemos hacer cualquier cosa con <b>any</b>. Hace que el valor de la variable se comporte como lo haría en JavaScript, y evita totalmente el typecheker haga su magia. Cuando permitimos <b>any</b> en nuestro código, estámos volando a ciegas. Por eso es que se recomienda usarlo solo como ultimo recurso.</p>
+              <img class="responsive-img" style="border-radius: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;" src="images/ts-3.png" alt="">
+            </div>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/puLiOHJUjv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+            
+          </div>
+          <div id="indice-6" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Unknown</b></p>
+            <p>Para los pocos casos en los que tenemos un valor cuyo tipo realmente no conocemos de antemano, en lugar de usar <b>any</b>, podemos usar el tipo <b>unknown</b>. Al igual que <b>any</b>, representa cualquier valor, pero en este caso TypeScript no te permite usar una varibale de tipo <b>unknown</b> hasta que no la redefinimos, para poder verificar qué es. ¿Qué operaciones admite unknown? Puede comparar valores desconocidos (con ==, ===, ||, &&, y ?), negarlos (con !) y redefinirlos (como puede hacer con cualquier otro type) con los operadores typeof e instanceof de JavaScript.</p>
+          </div>
+          <div id="indice-7" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Boolean</b></p>
+            <p>Los boolean tienen dos tipos de valores: true and false. Podemos compararlos (Con ==,
+              ===, ||, &&, y ?), negarlos (con !), y muchos mas.</p>
+              <pre>
+                <code>
+                  let a = true                  // boolean
+                  var b = false                 // boolean
+                  const c = true                // true
+                  let d: boolean = true         // boolean
+                  let e: true = true            // true
+                  let f: true = false           // Error TS2322: Type 'false' is not assignable
+                                                // to type 'true'.
+                </code>
+              </pre>
+            <p>En este ejemplo podemos ver como funcina:</p>
+            <ol>
+              <li>Podemos dejar que TypeScript deduzca que su valor es un booleano (a y b).</li>
+              <li>Podemos dejar que TypeScript deduzca que su valor es un booleano específico (c).</li>
+              <li>Podemos decirle a TypeScript explícitamente que su valor es un booleano (d).</li>
+              <li>Podemos decirle a TypeScript explícitamente que su valor es un booleano específico (e y f).</li>
+            </ol>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/wsk8mVK6xuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="indice-8" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Number</b></p>
+            <p>Es el conjunto de todos los números: integer, floats, positivos, negativos, infinito, NaN,
+              etc. Los números pueden hacer, bueno, muchas cosas, como sumar (+), restar (-),
+              módulo (%), y comparación (<). Veamos algunos ejemplos:</p>
+              <pre>
+                <code>
+                  let a = 1234                  // number
+                  var b = Infinity * 0.10       // number
+                  const c = 5678                // 5678
+                  let d = a < b                 // boolean
+                  let e: number = 100           // number
+                  let f: 26.218 = 26.218        // 26.218
+                  let g: 26.218 = 10            // Error TS2322: Type '10' is not assignable
+                                                // to type '26.218'.
+                </code>
+              </pre>
+              <ol>
+                <li>Podemos dejar que TypeScript deduzca que su valor es un número (a y b).</li>
+                <li>Podemos usar const para que TypeScript deduzca que su valor es un número específico (c)</li>
+                <li>Podemos decirle a TypeScript explícitamente que su valor es un número (e)</li>
+                <li>Podemos decirle a TypeScript explícitamente que su valor es un número específico (f y g).</li>
+              </ol>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/2bL4-kAP5ws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="indice-9" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Bigint</b></p>
+            <p>Es un tipo recien salido del horno en JavaScript y TypeScript: nos permite trabajar con numeros grandes sin incurrir en errores de redondeo. Mientras que el tipo <b>number</b> solo puede representar números enteros hasta 253, <b>bigint</b> también puede representar números enteros más grandes. <b>bigint</b> es el conjunto de todos los BigInts y admite cosas como la suma (+), la resta(-), multiplicación (*), división (/) y comparación (<).</p>
+          </div>
+          <div id="indice-10" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>String</b></p>
+            <p>Es el conjunto de todas las cadenas y las cosas que puede hacer con ellas, como concatenar(+), slice (.slice), etc. Veamos algunos ejemplos:</p>
+            <pre>
+              <code>
+                let a = 'hello'                 // string
+                var b = 'billy'                 // string
+                const c = '!'                   // '!'
+                let d = a + ' ' + b + c         // string
+                let e: string = 'zoom'          // string
+                let f: 'john' = 'john'          // 'john'
+                let g: 'john' = 'zoe'           // Error TS2322: Type "zoe" is not assignable
+                                                // to type "john".
+              </code>
+            </pre>
+          </div>
+
+
+          <div id="indice-10" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Object</b></p>
+            <p>Los tipos <b>object</b> de TypeScript especifican las formas de los objetos. En particular, es dificil diferenciar la referencia entre objetos simples (como el tipo con {}) y más complicados (del tipo que creas con el nuevo Blah). Esto es por diseño: JavaScript es generalmente tipificado estructuralmente, por lo que TypeScript favorece ese estilo de programación sobre un estilo nominalmente mecanografiado.</p>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/b1W51WvZBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div id="indice-11">
+            <p style='font-size: 1.5em;'><b>Arrays</b></p>
+            <p>Al igual que en JavaScript, las matrices de TypeScript son tipos especiales de objetos que admiten cosas como concatenación, pushing, buscar y slicing. Veamos unos ejemplos:</p>
+            <pre>
+              <code>
+                let a = [1, 2, 3]                   // number[]
+                var b = ['a', 'b']                  // string[]
+                let c: string[] = ['a']             // string[]
+                let d = [1, 'a']                    // (string | number)[]
+                const e = [2, 'b']                  // (string | number)[]
+                let f = ['red']
+                f.push('blue')
+                f.push(true)                        // Error TS2345: Argument of type 'true' is not
+                                                    // assignable to parameter of type 'string'.
+                let g = []                          // any[]
+                g.push(1)                           // number[]
+                g.push('red')                       // (string | number)[]
+                let h: number[] = []                // number[]
+                h.push(1)                           // number[]
+                h.push('red')                       // Error TS2345: Argument of type '"red"' is not
+                                                    // assignable to parameter of type 'number'.
+              </code>
+            </pre>
+            <p>La regla general es mantener las matrices homogéneas. Es decir, no mezcles manzanas
+              y naranjas y números en una sola matriz, debemps tratar de diseñar nuestros programas de tal forma que cada elemento de nuestra matriz tenga el mismo tipo. La razón es que de lo contrario, estás tendrá que trabajar más para demostrarle a TypeScript que lo que está haciendo es seguro.</p>
+              <iframe width="937" height="498" src="https://www.youtube.com/embed/yYCwB4k3NL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="clases" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Classes</b></p>
+            <p>Las clases son la forma en la que te organizas y piensas sobre tu código, y sirven como unidad principal de encapsulación. Las clases de TypeScript se inspiran mucho en C# y admiten cosas como modificadores de visibilidad, inicializadores de propiedades, polimorfismos, decoradores e interfaces. Pero debido a que las clases de TypeScript se compilan en clases de JavaScript regulares, tambien podemos expresar JavaScript, como mixins de forma segura.</p>
+            <p>Algunas cosas resumidas que podemos hacer:</p>
+            <ol>
+              <li>Declarar las clases con la palabra clave class. Extenderlas con la palabra clave extends.</li>
+              <li>Las clases pueden ser concretas o abstractas. Las clases abstractas pueden tener resumen
+                métodos y propiedades abstractas.</li>
+              <li>Los métodos pueden ser privados, protegidos o, de forma predeterminada, públicos. Pueden ser metodos instanciados o métodos estáticos.</li>
+              <li>Las clases pueden tener propiedades de instancia, que también pueden ser privadas, protegidas o, por defecto, público. Podemos declararlos como parametros en el constructor o pasar como propiedades de inicializacion</li>
+              <li>Podemos marcar las propiedades de la instancia como de solo lectura al declararlas.</li>
+            </ol>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/P-AARVAHSoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="indice-13" class="section scrollspy">
+            <p style='font-size: 1.5em;'><b>Interfaces</b></p>
+            <p>Cuando usamos clases, normalmente tambien usamos interfaces. Al igual que los alias de tipo, las interfaces son una forma de nombrar un tipo para que no tengamos que definir en línea. Los alias de tipo y las interfaces son en su mayoría dos sintaxis para lo mismo (como expresiones de funciones y declaraciones de funciones), pero hay algunas pequeñas diferencias.
+            <pre>
+              <p><b>Clase</b></p>
+              <code>
+                type Sushi = {
+                  calories: number
+                  salty: boolean
+                  tasty: boolean
+                 }
+              </code>
+              <p><b>Interface</b></p>
+              <code>
+                interface Sushi {
+                  calories: number
+                  salty: boolean
+                  tasty: boolean
+                 }
+              </code>
+            </pre>
+            <iframe width="937" height="498" src="https://www.youtube.com/embed/5SJQx4zbxU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div id="ejemploPractico"class="white section scrollspy">
+            <div class="col s12">
+              <h4><b>Ejemplos practicos</b></h4>
+              <p>Todos los ejemplos realizados los puedes encontrar haciendo click en el siguiente enlace.</p>
+              <a  class="waves-effect waves-light btn light-blue darken-4" href="https://github.com/Bassline528/typescript-tp"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+
+
+          <div id="comentarios" class="white section scrollspy">
+            <div class="row">
+  
+              <div class="col s12">
+                <h4><b>Comentarios </b></h4>
+              </div>
+
+              <div class="row" > 
+
+                <div class="col s12 card">
+                  <div class="col s2" style="padding: 20px;">
+                    <img src="./images/cuajo.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10" style="padding-bottom: 20px;">
+                    <h6><b>Renato Ferrer</b> - 06/06/2022</h6>
+                    <span class="black-text">
+                      Luego de investigar de que trataba typescript, entendi cuanto mejora la experiencia de un programador al codificar en javascript, elimina la mayoria de los problemas que tiene javascript. Javascript es un lenguaje muy flexible podes hacer lo que quieras con el codigo, pero claro, cuando queremos sacar ese codigo a produccion es cuando vemos la mayoria de errores que nuestro codigo contaba, y esos son errores que no podes anticipar por como Javascript esta construido. Algo que destacar es que todo lo que hagas en Javascript va a funcionar muy bien en Typescript, pero no es el caso al reves. Entonces teniendo eso en cuenta no es necesario que empieces un proyecto pura y unicamente con Typescript, podes empezar codificando Javascript y a medida que tu proyecto se haga cada vez mas grande podes ir empezando a cambiar ciertas cosas que vos consideres necesarias. Un ejemplo puede ser que quieras acceder a una propiedad de un objeto a aun no ha sido declarado, javascript no te avisará de esto, es más tu codigo seguira corriendo de la misma forma, mientras que en Typescript no solo te avisara cuando intentes compilar el codigo, sino que tu IDE ya te mostrara una linea de error indicando su motivo tambien.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="col s12 card">
+                  <div class="col s2" style="padding: 20px;">
+                    <img src="./images/lugo.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10" style="padding-bottom: 20px;">
+                    <h6><b>Mathias Lugo</b> - 06/06/2022</h6>
+                    <span class="black-text" >
+                      Siempre para mi JavaScript fue y es mi lenguaje preferido, de mayor uso y con el que trabajo varios proyectos. En todo este tiempo que lo vine usando nunca se me paso (o por lo menos no me di cuenta) de las inconsistencias que tiene. Fue solo cuando comencé a leer sobre TypeScript que me di cuenta de todas las soluciones que ofrecía este nuevo lenguaje frente a JavaScript. 
+                      Al tener que declarar explícitamente el tipo de las variables, no solo estoy agregando un dato mas y ya, sino que estoy estructurando mejor mi código y mejorando mi flujo de desarrollo, ya que gracias a esos datos typescript me puede  decir de antemano que es lo que no esta bien en mi código ( en caso que hubiera algún error ) para asi poder solucionar con mayor rapidez los problemas. Con todo eso, typescript mejora la eficiencia de mi código y tiempo de programación.
+                      Pienso que este lenguaje cada vez ira creciendo mas en popularidad. Ya son muchos los programadores que obtan por codear con typescript, tanto por su facilidad de aprendizaje como por su seguridad para proyectos importantes.
+                      Con este tema lo que buscamos es darle mas profundidad a nuestros conocimientos de javascript, y subir un escalon mas en la profesionalidad de nuestros proyectos.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="col s12 card">
+                  <div class="col s2" style="padding: 20px;">
+                    <img src="./images/nelson.jpeg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10" style="padding-bottom: 20px;">
+                    <h6><b>Nelson Aranda</b> - 06/06/2022</h6> <p></p>
+                    <span class="black-text">
+                      Al empezar mi carrera como desarrollador siempre vi a JavaScript como un “reto”, leyendo siempre comentarios de odio hacia esa herramienta y nunca entendí el porqué. En mi primera experiencia laboral como desarrollador me tocó trabajar con TypeScript, cabe resaltar que cuando esto yo aun no tenia experiencia en JavaScript pero si en lenguajes de programación orientada a objetos como Java, por lo que TypeScript se me hizo muy familiar y fácil de aprender. Luego un año más tarde empecé mi camino con JavaScript y empecé a entender estos "comentarios de odio" hacia el mismo y deje de ver a Javascript como un “reto”. Al haber aprendido primero TypeScript me fue sencillo entrar en JavaScript puro ya que son muy parecidos. Personalmente me gusta más trabajar con TypeScript ya que me ayuda a escribir un código mucho más limpio, ordenado y fácil de mantener, gracias al Intellisense podemos darnos cuenta de errores antes de ejecutar nuestro código, cosa que no sucede en JavaScript. Es por eso que decidí optar por esta herramienta como tema de investigación, por ser el primer lenguaje con el que me tope en el mercado y también por ser una herramienta que recomendaría a cualquiera que desea iniciarse en la programación orientada a objetos. 
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="conclusion" class="white section scrollspy">
+            <div class="row">
+              <div class="col s12">
+                <h4><b>Conclusion </b></h4>
+              </div>
+
+              <div class="col s12">
+                <span style="white-space: pre-line;"> 
+                  A lo largo de los últimos años Javascript fue creciendo de manera exponencial, cada vez hay más librerías, más
+                  frameworks y más herramientas que nos permiten trabajar de una mejor manera. Originalmente Javascript no fue diseñado 
+                  para crear aplicaciones de mediana y gran escala, fue diseñado para unas cuantas miles de línea de código, hoy en dia es facil 
+                  superar millones de lineas de código en un lenguaje de programación dinámico, esto lleva a una serie de problemas a la hora de mantener codigo, especialmente cuando no es nuestro. <br> 
+
+                  Typescript es un lenguaje fuertemente tipado por lo que debemos indicar en todos los casos el tipo de dato a manejar. Permite crear estructuras en base a interfaces de modo que podamos trabajar con una estructura de datos predefinida que no se salga de ciertos parámetros. Ofrece una sintaxis muy similar a la de otros lenguajes como C# o Java, y además añade capacidades inéditas en ECMAScript, como las clases abstractas, modificadores de acceso, tipos enumerados. Las interfaces son esenciales y permiten crear multitud de escenarios avanzados. <br>
+
+                  Como TypeScript es un superconjunto de JavaScript, todo el código escrito en JavaScript es válido para TypeScript. También se puede transpirlar a cualquier variante de JavaScript ECMAScript que deseemos. Por ejemplo, si sabemos que nuestro proyecto va a trabajar en navegadores antiguos podemos forzar que se compile a ECMAScript 5 (el JavaScript clásico, soportado por todos los navegadores). Sin embargo, si tenemos claro que los usuarios van a emplear navegadores relativamente recientes, podemos generar un código final más sencillo apoyado en ECMAScript 6 o posterior. <br>
+
+                  En proyectos medianos o grandes, y sobre todo si están involucradas varias personas, escribir el código en TypeScript ofrece grandes ventajas, pero en proyectos pequeños usar Typescript se podría ver como “utilizar una RTX 3090 para jugar al buscaminas” por lo que tal vez no merezca la pena. Existen Frameworks de JavaScript como por ejemplo Angular en donde es obligatorio usar TypeScript ya que fue escrito en ese lenguaje y la documentación oficial promueve el uso del mismo.  <br>
+                  
+                  TypeScript nos ofrece grandes ventajas, podemos resumirlo en una pequeña lista; <br>
+                  <ul>
+                    <li>Si ya conoces Javascript o las bases de la misma entonces será fácil aprender TypeScript.</li>
+                    <li>Convierte a Javascript en un lenguaje equiparable a Java, C#, u otro lenguaje orientado a objetos. </li>
+                    <li>Permite estandarizar una estructura de trabajo para que el código sea más fácil de mantener a largo plazo.</li>
+                    <li>Da contexto al código, ya que al ser fuertemente tipado el código es más rico en información.</li>
+                    <li>Señala errores en el momento de la disposición antes de ejecutar nuestro código.</li>
+                    <li>Funciona bien con Frameworks de Front End como Angular, React, Ember y otros más.</li>
+                  </ul>
+
+                  Typescript está respaldada por Microsoft, goza de una excelente comunidad, es muy importante tener en cuenta la comunidad a la hora de elegir una herramienta. A día de hoy Angular (un framework en donde es obligatorio el uso de TypeScript)  sigue siendo muy demandado en el mercado, por lo cual aprender TypeScript podría ser la opción correcta. 
+
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col hide-on-small-only m3 l2 sticky">
+        <ul class="section table-of-contents">
+          <li><a href="#introduccion">Introduccion</a></li>
+          <li><a href="#quees">¿Qué es Typescript?</a></li>
+          <li><a href="#tsvsjs"">Typescript vs Javascript</a></li>
+          <li><a href="#instalar">Instalar Typescript</a></li>
+          <li><a href="#primerospasos">Primeros pasos</a></li>
+          <li><a href="#tipos">Tipos de datos</a></li>
+          <li><a href="#clases">Interfaces - Clases</a></li>
+          <li><a href="#ejemploPractico">Ejemplo practico</a></li>
+          <li><a href="#comentarios">Comentarios</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section style="display: flex; position: relative; align-items: stretch;">
+    <div>
+      <div class="container">
+          <div class="row">
+              
+          </div>
+      </div>
+
+      <div class="col s12 m9 l10">
+        <div class="container" style="padding-bottom: 4em;">
+          
+          
+          
+          
+          
+          
+          
+        
+          
+        </div>
+      </div>
+      
+    </div> 
+  </section>
+
+
+  
+
+
+  <footer class="page-footer light-blue darken-4 " >
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img src="./images/logo_white.png" class="responsive-img" alt="" width="100">
+          <h5 class="white-text">TRIOUK</h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright ">
+      <div class="container">
+      © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+ 
+  
+</body>
+</html>

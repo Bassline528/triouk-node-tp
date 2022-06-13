@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Cabecera */
+.cabecera{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 0 5em;
+    margin-top: 3em;
+    padding: 5em 2em;
+    background-color: aquamarine;
+}
+.cabecera hr{
+    border-color: aquamarine;
+}
+.cabecera h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+.cabecera h4{
+    font-size: 1.3em;
+}
+.cabecera img{
+    width: 430px;
+    height: 300px;
+}
+
+/* Que es tutorial hell */
+.queEs{
+    margin: 0 5em;
+}
+.queEs h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.queEs ol{
+    margin: 1.5em auto;
+}
+.queEs li{
+    margin: .7em 1em;
+}
+.queEs-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 2em auto;
+}
+.queEs-1 img{
+    width: 430px;
+    height: 300px;
+}
+
+/* centrar */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comoEscapar{
+    background-color: aquamarine;
+}
+.comoEscapar dt{
+    margin-top: 1em;
+}
+.comoEscapar dd{
+    margin: .5em auto;
+}
+
+@media (max-width: 1000px) {
+    .cabecera{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .queEs-1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

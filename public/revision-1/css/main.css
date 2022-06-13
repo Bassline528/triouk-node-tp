@@ -1,0 +1,39 @@
+cite {
+    color: grey;
+}
+
+.content{
+    width: 96%;
+    margin: 2em 0em 1em 2em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.video-content{
+    margin: 2em 0;
+    width: 70%;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2em;
+}
+
+.video-content h1{
+    font-size: 3em;
+    color: #423F3E;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    transition: all 300ms;
+}
+
+.bigImg:hover{
+    transform: scale(.90);
+}

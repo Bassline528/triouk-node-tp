@@ -1,0 +1,26 @@
+body{
+    background-color: azure;
+}
+
+/* cabecera */
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera img{
+    margin-top: 1em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 550px;
+    height: 350px;
+}
+.cabecera h1{
+    color: #FFA62B;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}
+.cabecera h6{
+    text-align: center;
+    font-size: 1.5em;
+}
